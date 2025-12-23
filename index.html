@@ -318,7 +318,8 @@
         <strong>OBS:</strong> Ni ska lösa utmaningen tillsammans!<br/>
         Inga digitala hjälpmedel. Era hockeyhjärnor slår Google.<br/>
         Ingen kommer att kontrollera.<br/>
-        Men som ni vet ser tomten allt 😉
+        Men som ni vet ser tomten allt 😉<br/>
+        Är båda redo? Då kan ni klicka på Starta.
       </div>
       <div style="margin-top:10px; color: rgba(255,255,255,0.70); font-size: 12px;">
         Läs svarstexten efter varje fråga. Där finns ibland små ledtrådar om ni skulle behöva.
@@ -365,7 +366,7 @@
       <div class="question" id="endTitle">Snyggt spelat.</div>
       <p style="font-size:18px; margin: 6px 0 0;" id="endBody"></p>
       <div style="font-weight:850; letter-spacing:0.2px; font-size:16px; margin-top: 10px;">
-        Skärmdump + sms till 070-279 30 78
+        Skicka en skärmdump på den här sidan, samt en groupie-bild där ni båda syns som ett meddelande till 070-279 30 78 så kommer julklappen i retur
       </div>
       <div class="actions">
         <button class="btn" id="restartBtnEnd">Börja om</button>
@@ -438,8 +439,8 @@
         correctIndex: 1,
         pointsEnabled: true,
         hint: "Ledtråd: Leksand har inte vunnit något SM-guld sedan 1975. Så ni kan räkna på Brynäs.",
-        okText: "Helt korrekt. Tradition i all ära, men inte så mycket guld på slutet.",
-        wrong2Text: "Nej. Tyvärr. Rätt svar är 2. Vi går vidare ändå."
+        okText: "Helt korrekt. Brynäs vann 1999 och 2012. Leksand däremot har inte vunnit något guld sedan 1975... Tradition i all ära, men inte så mycket guld på slutet.",
+        wrong2Text: "Nej. Tyvärr. Rätt svar är 2. Brynäs vann 1999 och 2012. Leksand däremot har inte vunnit något guld sedan 1975... Vi går vidare."
       },
       {
         id: 4,
@@ -448,18 +449,18 @@
         correctIndex: 1,
         pointsEnabled: true,
         hint: "Ledtråd: Det är fler än “några få”, färre än “orimligt många”. Tänk: en hand, men inte full.",
-        okText: "Precis. 2015, 2018, 2021, 2023. “Yngsta laget är de bästa laget”… ni vet hur den går.",
-        wrong2Text: "Nej. Tyvärr. Rätt svar är 4. Vi går vidare ändå."
+        okText: "Precis. 2015, 2018, 2021, 2023. “Yngsta laget är de bästa laget”… ni vet hur den sången går.",
+        wrong2Text: "Nej. Tyvärr. Rätt svar är 4. 2015, 2018, 2021, 2023. “Yngsta laget är de bästa laget”… ni vet hur den sången går."
       },
       {
         id: 5,
-        text: "Vad slutade matchen Brynäs–Växjö Lakers den 23 oktober 2025?",
+        text: "Hur slutade matchen Brynäs–Växjö Lakers den 23 oktober 2025?",
         options: ["Brynäs vann med 2–1", "Växjö vann med 2–1", "Växjö vann med 7–4"],
         correctIndex: 1,
         pointsEnabled: true,
         hint: "Ledtråd: Avgörandet kom i powerplay. Och det var inte Brynäs som log efteråt.",
         okText: "Exakt. 2–1 till Lakers. Powerplay levererar. Som vanligt.",
-        wrong2Text: "Nej. Tyvärr. Rätt svar är Växjö vann med 2–1. Vi går vidare ändå."
+        wrong2Text: "Nej. Tyvärr. Rätt svar är Växjö vann med 2–1. Powerplay levererar. Som vanligt. Vi går vidare."
       }
     ];
 
@@ -588,7 +589,7 @@
         let msg = "";
         const chosen = q.options[chosenIndex];
         if(chosen === "Brynäs"){
-          msg = "ok, kämpigt... men det kommer nog att gå bättre snart";
+          msg = "ok... vi hoppas det går bra ändå";
         } else if(chosen === "Leksand"){
           msg = "ok, jobbigt. Hockey Sverige känner med er";
         } else {
@@ -647,7 +648,7 @@
 
       if(score >= target){
         endTitle.textContent = "Snyggt spelat.";
-        endBody.textContent = "Ni klarade utmaningen tillsammans. Hockeyhjärna på hög nivå. Nu är det bara att inkassera julklappen.";
+        endBody.textContent = "Ni klarade utmaningen. Grattis! Hockeyhjärna på hög nivå. Nu är det bara att inkassera julklappen.";
       } else {
         endTitle.textContent = "Starkt ändå.";
         endBody.textContent = "Nära, väldigt nära. Men jul är ändå jul. Ni kämpade ihop och det räcker gott. Nu är det bara att inkassera julklappen.";
